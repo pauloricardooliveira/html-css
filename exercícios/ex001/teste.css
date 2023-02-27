@@ -1,0 +1,148 @@
+ul#testando {
+    list-style-type: none;
+}
+
+ul#testando li {
+    float: left;
+    border: 5px solid white;
+    box-shadow: 3px 3px 6px black;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    transition: all 0.4s ease-in;
+}
+
+ul#testando li:hover {
+    transform: scale(1.5);
+}
+
+ul#testando li span {
+    line-height: 350px;
+    margin: 0px 0px 0px 65px;
+    color: white;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, .4);
+    text-shadow: 1px 1px 3px red;
+    opacity: 0;
+}
+
+ul#testando li:hover span {
+    opacity: 1;
+}
+
+ul#testando li#foto1 {
+    background-image: url('bebehomem.jpg');
+    background-repeat: no-repeat;
+    background-size: 400px 400px;
+    background-position: 50% 50%;
+    border-radius: 100px;
+}
+ul#testando li#foto1:hover {
+    background-size: 200px 200px;
+    background-position: 0px 0px;
+}
+
+ul#testando li#foto2 {
+    background-image: url('bebemulher.jpg');
+    background-repeat: no-repeat;
+    background-size: 400px 400px;
+    background-position: 50% 50%;
+    border-radius: 100px;
+}
+ul#testando li#foto2:hover {
+    background-size: 200px 200px;
+    background-position: 0px 0px;
+}
+
+div#videos {
+    margin-left: 50px;
+}
+
+p#ultimovideo {
+    margin-left: 300px;
+}
+
+body {
+    background-image: linear-gradient(90deg,  red, orange);
+}
+
+h1 {
+    margin-left: 300px;
+    color: rgb(241, 33, 33);
+    background-color: white;
+    width: 400px;
+    text-align: center;
+    box-shadow: 3px 3px 6px white;
+}
+
+/* Abaixo modificando minhas pseudoclasses e pseudoelementos*/
+
+a {
+    color: white;
+    text-decoration: none;
+    font-size: 20pt;
+}
+
+a:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+a:visited {
+    color: blue;
+}
+a:active {
+    color: yellow;
+}
+
+/* Mais um album de fotos abaixo */
+
+div#photos li {
+    display: inline-block;
+    list-style: none;
+    width: 350px;
+    height: 350px;
+    margin: 20px;
+    border: 5px solid black;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, .4);
+    transition: all .4s ease-in;
+}
+div#photos li:hover {
+    transform: scale(1.5);
+}
+
+div#photos li span {
+    line-height: 570px;
+    margin-left: 120px;
+    font-size: xx-large;
+    background-color: rgba(0, 0, 0, .4);
+    padding: 10px;
+    text-shadow: 3px 3px 3px white;
+    opacity: 0;
+}
+div#photos li:hover span {
+    opacity: 1;
+}
+
+div#photos li#photo1 {
+    background-image: url('adultamulher.jpg');
+    background-repeat: no-repeat;
+    background-size: 700px 700px;
+    background-position: 50% 50%;
+}
+
+div#photos li#photo1:hover {
+    background-size: 350px 350px;
+    background-position: 0px 0px;
+}
+
+div#photos li#photo2 {
+    background-image: url('bebehomem.jpg');
+    background-repeat: no-repeat;
+    background-size: 700px 700px;
+    background-position: 50% 50%;
+}
+div#photos li#photo2:hover {
+    background-position: 0px 0px;
+    background-size: 350px 350px;
+}

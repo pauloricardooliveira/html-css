@@ -1,0 +1,14 @@
+fieldset {
+    width: 500px;
+    margin: 0px auto 20px auto;
+    padding: 10px;
+    font-size: 25px;
+}
+fieldset input, select {
+    height: 20px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.4);
+}
+fieldset#sex {
+    width: 200px;
+    margin-left: 0px;
+}

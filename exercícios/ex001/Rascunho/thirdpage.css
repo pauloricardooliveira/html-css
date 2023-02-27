@@ -1,0 +1,140 @@
+div {
+    width: 700px;
+    height: 1760px;
+    margin: auto;
+    background-color: white;
+    box-shadow: 3px 3px 6px black;
+    padding: 10px;
+}
+
+hgroup h1 {
+    text-align: center;
+}
+hgroup h2 {
+    text-align: center;
+}
+
+ul#menu {
+    list-style: none;
+    margin-left: 130px;
+}
+ul#menu li {
+    display: inline-block;
+    background-color: red;
+    color: white;
+    padding: 10px;
+    box-shadow: 2px 2px 3px black;
+}
+ul#menu li:hover {
+    background-color: blue;
+    transition: all 1s;
+}
+
+h2 {
+    text-align: center;
+}
+
+p {
+    text-align: justify;
+    text-indent: 50px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+a:hover {
+    text-decoration: underline;
+}
+img#fotoMenu {
+    width: 100px;
+    float: right;
+    border-radius: 100%;
+    margin-right: 30px;
+}
+
+/* Abaixo css sobre minha terceira página */
+
+ul#photo {
+    list-style: none;
+}
+
+ul#photo li span {
+    line-height: 320px;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    padding: 5px;
+    text-shadow: 3px 3px 3px black;
+    opacity: 0;
+}
+ul#photo li:hover span {
+    opacity: 1;
+}
+
+ul#photo li {
+    float: left;
+    width: 180px;
+    height: 180px;
+    margin: 10px;
+    border: 5px solid white;
+    box-shadow: 3px 3px 6px black;
+    transition: all 0.4s ease-in;
+}
+ul#photo li:hover {
+    transform: scale(1.5);
+}
+
+ul#photo li#photo1 {
+    background-image: url('adultamulher.jpg');
+    background-size: 400px 400px;
+    background-position: 50% 50%;
+}
+ul#photo li#photo1:hover {
+    background-size: 200px 200px;
+    background-position: 0px 0px;
+}
+ul#photo li#photo2 {
+    background-image: url('bebehomem.jpg');
+    background-size: 400px 400px;
+    background-position: 50% 50%;
+}
+ul#photo li#photo2:hover {
+    background-size: 200px 200px;
+    background-position: 0px 0px;
+}
+ul#photo li#photo3 {
+    background-image: url('bebemulher.jpg');
+    background-size: 400px 400px;
+    background-position: 50% 50%;
+}
+ul#photo li#photo3:hover {
+    background-size: 200px 200px;
+    background-position: 0px 0px;
+}
+ul#photo li#photo4 {
+    background-image: url('fotonoite.jpg');
+    background-size: 400px 400px;
+    background-position: 50% 50%;
+}
+ul#photo li#photo4:hover {
+    background-size: 200px 200px;
+    background-position: 0px 0px;
+}
+ul#photo li#photo5 {
+    background-image: url('../fotomanha.jpg');
+    background-size: 400px 400px;
+    background-position: 50% 50%;
+}
+ul#photo li#photo5:hover {
+    background-size: 200px 200px;
+    background-position: 0px 0px;
+}
+ul#photo li#photo6 {
+    background-image: url('../fototarde.jpg');
+    background-size: 400px 400px;
+    background-position: 50% 50%;
+}
+ul#photo li#photo6:hover {
+    background-size: 200px 200px;
+    background-position: 0px 0px;
+}

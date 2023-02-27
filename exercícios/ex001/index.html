@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro exercício</title>
+    <link rel="shortcut icon" href="adultamulher.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="teste.css">
+</head>
+<body>
+    <h1>Imagens</h1>
+    <p>Hora de testar as imagens</p>
+    <picture>
+        <source media="(min-width: 1000px)" srcset="adultamulherG.jpg" type="image/jpg">
+        <source media="(min-width: 700px)" srcset="adultamulherM.jpg" type="image/jpg">
+        <img src="adultamulherP.jpg" alt="">
+    </picture>
+    <p id="paragrafo">Escute um áudio abaixo</p>
+    <audio src="guanacast-33.mp3" controls></audio>
+    <audio src="happy-mistake.mp3" controls></audio>
+    <picture>
+        <source media="(max-width: 700px)" srcset="adultamulherP.jpg" type="image/jpg">
+        <source media="(max-width: 1000px)" srcset="adultamulherM.jpg" type="image/jpg">
+        <img src="adultamulherG.jpg" alt="">
+    </picture>
+    <ul id="testando">
+        <li id="foto1"><span>Foto1</span></li>
+        <li id="foto2"><span>Foto2</span></li>
+        <li id="foto3"><span>Foto3</span></li>
+        <li id="foto4"><span>Foto4</span></li>
+    </ul>
+    <video src="videoteste.mp4" width="300px" height="300px" controls></video>
+    <h1>Vídeos legais para assistir</h1>
+    <div id="videos">
+        <a href="paginavideo1.html"><iframe width="400" height="315" src="https://www.youtube.com/embed/vWrdlN6e_mE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></a>
+        <iframe width="400" height="315" src="https://www.youtube.com/embed/tqPfC70FzrQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe width="400" height="315" src="https://www.youtube.com/embed/OmvXFtzIBvs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe width="400" height="315" src="https://www.youtube.com/embed/viviyfHjd5c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <p id="ultimovideo"><a href="https://www.youtube.com/embed/rQWVZ2p9xLQ" target="_blank">Veja outro vídeo diferentinho</a>
+    </div>
+    <div id="photos">
+        <ul>
+            <li id="photo1"><span>Photo1</span></li>
+            <li id="photo2"><span>Photo2</span></li>
+            <li id="photo3"><span>Photo3</span></li>
+            <li id="photo4"><span>Photo4</span></li>
+        </ul>
+    </div>
+</body>
+</html>

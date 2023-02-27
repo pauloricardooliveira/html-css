@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Site</title>
+    <link rel="stylesheet" href="meusite.css">
+    <script>
+        function mudaFoto(nameless) {
+            document.getElementById('fotoMenu').src = nameless
+        }
+    </script>
+</head>
+<body>
+    <div>
+        <header>
+            <hgroup>
+                <h1>My first website</h1>
+                <h2>I am out of ideas</h2>
+            </hgroup>
+            <ul>
+                <li onmouseover="mudaFoto('bebehomem.jpg')" onmouseout="('bebehomem.jpg')"><a href="meusite.html">Home</a></li>
+                <li onmouseover="mudaFoto('bebemulher.jpg')" onmouseout="mudaFoto('bebehomem.jpg')"><a href="secondpage.html">Second page</a></li>
+                <li onmouseover="mudaFoto('adultamulher.jpg')" onmouseout="mudaFoto('bebehomem.jpg')"><a href="thirdpage.html">Third page</a></li>
+                <li onmouseover="mudaFoto('fotonoite.jpg')" onmouseout="mudaFoto('bebehomem.jpg')"><a href="fourthpage.html">Fourth page</a></li>
+            </ul>
+            <img id="fotoMenu" src="bebehomem.jpg" alt="">         
+        </header>
+        <section id="secao">
+            <h2>Why am I doing it?</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat natus praesentium labore eum quisquam, officiis ea amet voluptatem nihil eos provident a aliquid beatae laboriosam suscipit aliquam dolore sit impedit, quis animi iste! Quam harum facere, odio minus, libero ipsa placeat repudiandae voluptate iusto ea expedita soluta vero laudantium quibusdam?</p>
+            <figure id="myfigure">
+                <figcaption>My image is beautifull</figcaption>
+                <img width="300px" src="../adultamulher.jpg" alt="">
+            </figure>
+            <h2>I don't know what to say</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit porro explicabo mollitia adipisci laudantium, maiores itaque vel. Cupiditate consectetur placeat voluptatem sequi hic ducimus veniam, natus enim velit inventore pariatur ea, sed adipisci atque asperiores eius debitis, cum itaque. Recusandae cum expedita nobis repellat velit saepe, voluptate non iusto dolore!</p>
+            <h2>Now a table below</h2>
+            <table id="tabela">
+                <caption>Minha tabela é demais</caption>
+                <tr><td class="esq">Processador</td><td class="dir">Snapdragon 870</td></tr>
+                <tr><td class="esq" rowspan="2">Armazenamento</td><td class="dir">64 GB</td></tr>
+                <tr><td class="dir">128 GB</td></tr>
+                <tr><td class="esq" rowspan="2">Ram</td><td class="dir">8 GB</td></tr>
+                <tr><td class="dir">16 GB</td></tr>
+                <tr><td class="esq">Bateria</td><td class="dir">5.000 mAh</td></tr>
+                <tr><td id="isolada" colspan="2">Única linha</td></tr>
+            </table>
+            <h2>That is just a H2</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus iure accusantium, sequi eos autem necessitatibus, dicta inventore eligendi maiores numquam ad perferendis porro? Quasi ipsam ut labore magnam, temporibus laboriosam.</p>
+            <iframe id="frame" width="560" height="315" src="https://www.youtube.com/embed/E9BI1f9B5aE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </section>
+        <aside id="lado">
+            <h2>This is my aside</h2>
+            <iframe id="frame2" width="560" height="315" src="https://www.youtube.com/embed/1eUqzcw5Njk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <h2>That is just another</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur eos explicabo impedit cupiditate facilis esse, et cumque perspiciatis quaerat. Magni quas laboriosam itaque earum, eaque repudiandae quam, pariatur aliquam vel tempora officia quia doloremque id ut accusamus perferendis. Ducimus facilis quis quasi assumenda itaque eum possimus, harum amet suscipit quaerat.</p>
+        </aside>
+        <footer id="rodape">
+            &copyPauloRicardo2023
+        </footer>
+
+    </div>
+    
+</body>
+</html>

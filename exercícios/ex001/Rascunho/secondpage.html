@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My second page</title>
+    <link rel="stylesheet" href="secondpage.css">
+    <script>
+        function mudaFoto(nameless) {
+            document.getElementById('fotoMenu').src = nameless
+        }
+    </script>
+</head>
+<body>
+    <div>
+        <header>
+            <hgroup>
+                <h1>My first website</h1>
+                <h2>I am out of ideas</h2>
+            </hgroup>
+            <ul>
+                <li onmouseover="mudaFoto('bebehomem.jpg')" onmouseout="mudaFoto('bebemulher.jpg')"><a href="meusite.html">Home</a></li>
+                <li onmouseover="mudaFoto('bebemulher.jpg')" onmouseout="mudaFoto('bebemulher.jpg')"><a href="secondpage.html">Second page</a></li>
+                <li onmouseover="mudaFoto('adultamulher.jpg')" onmouseout="mudaFoto('bebemulher.jpg')"><a href="thirdpage.html">Third page</a></li>
+                <li onmouseover="mudaFoto('fotonoite.jpg')" onmouseout="mudaFoto('bebemulher.jpg')"><a href="fourthpage.html">Fourth page</a></li>
+            </ul>
+            <img id="fotoMenu" src="bebemulher.jpg" alt="">         
+        </header>
+    <hgroup>
+        <h1>This is my second page</h1>
+        <h2>I am going to do an image map now</h2>
+    </hgroup>
+    <img usemap="#mapa" src="bebehomem.jpg" alt="">
+    <map name="mapa">
+        <area shape="rect" coords="135,211,166,230" href="meusite.html#tabela" alt="" target="frame">
+        <area shape="circle" coords="114,218,14" href="meusite.html#frame" alt="" target="frame">
+        <area shape="poly" coords="72,278,131,321,114,339,65,301" href="meusite.html#lado" alt="" target="frame">
+    </map>
+    <iframe id="aiframe" src="meusite.html" frameborder="0" name="frame"></iframe>
+    </div>
+</body>
+</html>

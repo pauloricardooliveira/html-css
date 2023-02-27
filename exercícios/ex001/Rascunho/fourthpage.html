@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My fourth page</title>
+    <link rel="stylesheet" href="meusite.css">
+    <link rel="stylesheet" href="fourthpage.css">
+    <script>
+        function mudaFoto(nameless) {
+            document.getElementById('fotoMenu').src = nameless
+        }
+        function calcular() {
+            var quantidade = parseInt(document.getElementById('iQua').value)
+            total = quantidade * 150
+            document.getElementById('iTot').value = total
+        }
+    </script>
+</head>
+<body>
+    <div>
+        <header>
+            <hgroup>
+                <h1>My first website</h1>
+                <h2>I am out of ideas</h2>
+            </hgroup>
+            <ul id="menu">
+                <li onmouseover="mudaFoto('bebehomem.jpg')" onmouseout="mudaFoto('fotonoite.jpg')"><a href="meusite.html">Home</a></li>
+                <li onmouseover="mudaFoto('bebemulher.jpg')" onmouseout="mudaFoto('fotonoite.jpg')"><a href="secondpage.html">Second page</a></li>
+                <li onmouseover="mudaFoto('adultamulher.jpg')" onmouseout="mudaFoto('fotonoite.jpg')"><a href="thirdpage.html">Third page</a></li>
+                <li onmouseover="mudaFoto('fotonoite.jpg')" onmouseout="mudaFoto('fotonoite.jpg')"><a href="https://www.olx.com.br/">Fourth page</a></li>
+            </ul>
+            <img id="fotoMenu" src="fotonoite.jpg" alt="">         
+        </header>
+        <hgroup>
+            <h1>This is my fourth page</h1>
+            <h2>It is about forms</h2>
+        </hgroup>
+        <form action="paulo900@yahoo.com.br" method="post" id="formulario" oninput="calcular()">
+            <fieldset>
+                <legend>User Identity</legend>
+                <p><label for="iName">Name:</label> <input name="nName" id="iName" type="text" size="20px" maxlength="20px" placeholder="Full name"></p>
+                <p><label for="iPassword">Password:</label> <input type="password" name="nPassword" id="iPassword" maxlength="8" placeholder="8 digits"></p>
+                <p><label for="iEmail">Email:</label> <input type="email" name="nEmail" id="iEmail" placeholder="example@hotmail.com"></p>
+                <fieldset id="sex">
+                    <legend>Sex</legend>
+                    <input type="radio" name="nSex" id="iFemale" checked> <label for="iFemale">Female</label> <br> <input type="radio" name="nSex" id="iMale"> <label for="iMale">Male</label>                    
+                </fieldset>
+                <p>Birth date: <input type="date" name="nDate" id="iDate"></p>
+            </fieldset>
+            <fieldset>
+                <legend>User adress</legend>
+                <p><label for="iStr"><label for="iStr">Street:</label></label> <input type="text" name="nStr" id="iStr" placeholder="Street, avenue, etc..."></p>
+                <p><label for="iNum">Number:</label> <input type="number" name="nNum" id="iNum" min="0" max="99999" placeholder="0 to 99999"></p>
+                <p><label for="iSta">State:</label> <select name="nSta" id="iSta">
+                    <optgroup label="North">
+                        <option value="CL">Califórnia</option>
+                        <option value="TX">Texas</option>
+                        <option value="AL">Alasca</option>
+                    </optgroup>
+                    <optgroup label="South">
+                        <option value="FL">Flórida</option>
+                        <option value="AZ">Arizona</option>
+                        <option value="CL">Colorado</option>
+                    </optgroup>                    
+                </select></p>
+                <p><label for="iCit">City:</label> <input type="text" name="nCit" id="iCit" size="20px" maxlength="20px" placeholder="Your city" list="cities"></p>
+                <datalist id="cities">
+                    <option value="Sacramento"></option>
+                    <option value="Juneau"></option>
+                </datalist>
+            </fieldset>
+            <fieldset>
+                <legend>User message</legend>
+                <p><label for="iUrg">Urgency:</label> Min <input type="range" name="nUrg" id="iUrg" min="10" max="30" step="5"> Max</p>
+                <p><label for="iMes">Message:</label> <textarea name="nMes" id="iMes" cols="30" rows="5" placeholder="Type here your message"></textarea></p>
+            </fieldset>
+            <fieldset>
+                <legend>Quero um Google Glass</legend>
+                <p><input type="checkbox" name="nCai" id="iCai" checked> <label for="iCai">Gostaria de adquirir um Google Glass assim que disponível</label></p>
+                <p><label for="iCor">Cor:</label> <input type="color" name="nCor" id="iCor"></p>
+                <p><label for="iQua">Quantidade:</label> <input type="number" name="nQua" id="iQua" min="0" max="10"></p>
+                <p><label for="iTot">Total a pagar: R$</label> <input type="text" name="nTot" id="iTot" size="10px" readonly></p>
+                <p><input type="button" value="Enviar"></p>
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>

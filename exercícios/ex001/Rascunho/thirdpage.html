@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My third page</title>
+    <link rel="stylesheet" href="thirdpage.css">
+    <script>
+        function mudaFoto(nameless) {
+            document.getElementById('fotoMenu').src = nameless
+        }
+    </script>
+</head>
+<body>
+    <div>
+        <header>
+            <hgroup>
+                <h1>My first website</h1>
+                <h2>I am out of ideas</h2>
+            </hgroup>
+            <ul id="menu">
+                <li onmouseover="mudaFoto('bebehomem.jpg')" onmouseout="mudaFoto('adultamulher.jpg')"><a href="meusite.html">Home</a></li>
+                <li onmouseover="mudaFoto('bebemulher.jpg')" onmouseout="mudaFoto('adultamulher.jpg')"><a href="secondpage.html">Second page</a></li>
+                <li onmouseover="mudaFoto('adultamulher.jpg')" onmouseout="mudaFoto('adultamulher.jpg')"><a href="thirdpage.html">Third page</a></li>
+                <li onmouseover="mudaFoto('fotonoite.jpg')" onmouseout="mudaFoto('adultamulher.jpg')"><a href="fourthpage.html">Fourth page</a></li>
+            </ul>
+            <img id="fotoMenu" src="adultamulher.jpg" alt="">         
+        </header>
+        <hgroup>
+            <h1>
+                This is my second page
+            </h1>
+            <h2>It is about photos</h2>
+        </hgroup>
+        <ul id="photo">
+            <li id="photo1"><span>Photo 1</span></li>
+            <li id="photo2"><span>Photo 2</span></li>
+            <li id="photo3"><span>Photo 3</span></li>
+            <li id="photo4"><span>Photo 4</span></li>
+            <li id="photo5"><span>Photo 5</span></li>
+            <li id="photo6"><span>Photo 6</span></li>
+        </ul>
+    </div>
+    
+</body>
+</html>
