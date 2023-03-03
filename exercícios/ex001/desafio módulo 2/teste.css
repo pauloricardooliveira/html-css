@@ -124,3 +124,67 @@ figure#test:hover figcaption {
 figure{
     position: relative;
 }
+
+ul#fotos span {
+    line-height: 350px;
+    margin-left: 50px;
+    text-transform: uppercase;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 5px;
+    color: white;
+}
+ul#fotos {
+    list-style: none;
+}
+ul#fotos li {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    border: 5px solid #E36C05;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
+    margin: 10px;
+    transition: all 0.4s ease-in;
+}
+ul#fotos li:hover {
+    transform: scale(1.5);
+}
+ul#fotos li#foto1 {
+    background-image: url('../adultamulher.jpg');
+    background-repeat: no-repeat;
+    background-size: 400px 400px;
+    background-position: 50% 50%;
+}
+ul#fotos li#foto1:hover {
+    background-size: 200px 200px;
+    background-position: 0px 0px;
+}
+ul#fotos li#foto2 {
+    background-image: url('../bebemulher.jpg');
+    background-repeat: no-repeat;
+    background-size: 400px 400px;
+    background-position: 50% 50%;
+}
+ul#fotos li#foto2:hover {
+    background-size: 200px 200px;
+    background-position: 0px 0px;
+}
+ul#fotos li#foto3 {
+    background-image: url('../bebehomem.jpg');
+    background-repeat: no-repeat;
+    background-size: 400px 400px;
+    background-position: 50% 50%;
+}
+ul#fotos li#foto3:hover {
+    background-size: 200px 200px;
+    background-position: 0px 0px;
+}
+ul#fotos li#foto4 {
+    background-image: url('../fotonoite.jpg');
+    background-repeat: no-repeat;
+    background-size: 400px 400px;
+    background-position: 50% 50%;
+}
+ul#fotos li#foto4:hover {
+    background-size: 200px 200px;
+    background-position: 0px 0px;
+}
